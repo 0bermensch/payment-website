@@ -9,20 +9,6 @@ const Navbar = () => {
   const [navDeployed, setNavDeployed] = useState(false);
   const navBtn = useRef();
 
-  useEffect(() => {
-    handleMobileNavClose();
-  }, []);
-
-  const handleNavOpen = () => {
-    navBtn.current.classList.add("change");
-  };
-
-  const handleNavClose = () => {
-    setTimeout(function () {
-      navBtn.current.classList.remove("change");
-    }, 850);
-  };
-
   const handleMobileNavClose = () => {
     let mobileNavLinks = [...document.querySelectorAll(".page__link")].slice(
       3,
@@ -37,6 +23,20 @@ const Navbar = () => {
         closeAll();
       })
     );
+  };
+
+  useEffect(() => {
+    handleMobileNavClose();
+  }, []);
+
+  const handleNavOpen = () => {
+    navBtn.current.classList.add("change");
+  };
+
+  const handleNavClose = () => {
+    setTimeout(function () {
+      navBtn.current.classList.remove("change");
+    }, 850);
   };
 
   const closeAll = () => {
@@ -61,8 +61,7 @@ const Navbar = () => {
         <PageLinks />
         <Button text="Schedule a Demo" href="/contact" color="pink" />
       </div>
-      <a
-        href="#"
+      <div
         ref={navBtn}
         className="navbar__links--mobile-btn"
         aria-label="Button for mobile menu deployment"
@@ -80,7 +79,7 @@ const Navbar = () => {
           alt="X shape"
           onClick={handleNavClose}
         />
-      </a>
+      </div>
     </div>
   );
 };

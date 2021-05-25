@@ -10,15 +10,15 @@ const Footer = () => (
     </Link>
     <PageLinks />
     <div className="footer__socials">
-      <a href="#" aria-label="Facebook icon">
+      <div aria-label="Facebook icon">
         <i className="fab fa-facebook-square" />
-      </a>
-      <a href="#" aria-label="Twitter icon">
+      </div>
+      <div aria-label="Twitter icon">
         <i className="fab fa-twitter" />
-      </a>
-      <a href="#" aria-label="LinkedIn icon">
+      </div>
+      <div aria-label="LinkedIn icon">
         <i className="fab fa-linkedin" />
-      </a>
+      </div>
     </div>
   </div>
 );
