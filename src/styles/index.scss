@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@import "./partials/global";
+@import "./partials/themes";
+@import "./partials/typography";
+
+// Home
+@import "./partials/Home/hero";
+@import "./partials/Home/workPartners";
+@import "./partials/Home//appAttributes";
+
+// Pricing
+@import "./partials/Pricing/pricing";
+
+// About
+@import "./partials/About/aboutPage";
+
+// Contact
+@import "./partials/Contact/contactPage";
+
+//Shared
+@import "./partials/page";
+@import "./partials/navbar";
+@import "./partials/pageLinks";
+@import "./partials/button";
+@import "./partials/cta";
+@import "./partials/demoForm";
+@import "./partials/partnersGrid";
+@import "./partials/footer";
