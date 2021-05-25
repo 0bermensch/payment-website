@@ -62,7 +62,6 @@ const Navbar = () => {
         <Button text="Schedule a Demo" href="/contact" color="pink" />
       </div>
       <a
-        href="#"
         ref={navBtn}
         className="navbar__links--mobile-btn"
         aria-label="Button for mobile menu deployment"
