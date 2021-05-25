@@ -27,7 +27,7 @@ const Navbar = () => {
 
   useEffect(() => {
     handleMobileNavClose();
-  }, []);
+  });
 
   const handleNavOpen = () => {
     navBtn.current.classList.add("change");
